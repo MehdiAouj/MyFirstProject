@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstProject</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <style>
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	padding: 3rem;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	transition: all 725ms ease-in-out;
+    background-image: url(Walp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container
+{
+    transform: translate(0%, 100%);
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bolder;
+	margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px  #000;
+}
+
+p {
+	margin-bottom: 2rem;
+	color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px  #000;
+    font-size: 1.2rem;
+}
+
+#Btn2 {
+	cursor: pointer;
+	appearance: none;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 0.75rem 1rem;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: dodgerblue;
+	color: white;
+}
+
+#Btn1 {
+	cursor: pointer;
+	appearance: none;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 0.75rem 1rem;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: rgb(221, 79, 79);
+	color: white;
+}
+
+#Btn2:hover , #Btn1:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Hello I'm Mehdi and this is my first git Test</h1>
+<p>And I am a simple text paragraph. Click the red button below to remove me through the power of JavaScript, and the blue one to bring me back to life.</p>
+<button id="Btn1">Hide the text above</button>
+<button id="Btn2">Show the text above</button>
+        
+    </div>
+
+    <script>
+
+$("#Btn1").on("click", function () {
+	$("p").css("opacity", 0);
+});
+
+$("#Btn2").on("click", function () {
+	$("p").css("opacity", 100);
+});
+
+
+    </script>
+
+</body>
+</html>
